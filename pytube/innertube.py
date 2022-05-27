@@ -75,6 +75,7 @@ _token_file = os.path.join(_cache_dir, 'tokens.json')
 
 class InnerTube:
     """Object for interacting with the innertube API."""
+
     def __init__(self, client='ANDROID', use_oauth=False, allow_cache=True):
         """Initialize an InnerTube object.
 
@@ -299,7 +300,7 @@ class InnerTube:
         query.update(self.base_params)
         return self._call_api(endpoint, query, self.base_data)
 
-    def search(self, search_query, continuation=None):
+    def search(self, search_query, params, continuation=None):
         """Make a request to the search endpoint.
 
         :param str search_query:
@@ -310,7 +311,8 @@ class InnerTube:
         """
         endpoint = f'{self.base_url}/search'
         query = {
-            'query': search_query
+            'query': search_query,
+            'params': params
         }
         query.update(self.base_params)
         data = {}
