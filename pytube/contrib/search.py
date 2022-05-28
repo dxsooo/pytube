@@ -15,6 +15,8 @@ class Search:
 
         :param str query:
             Search query provided by the user.
+        :param str param:
+            Optional param provided by the user.
         """
         self.query = query
         self.param = param

@@ -305,6 +305,8 @@ class InnerTube:
 
         :param str search_query:
             The query to search.
+        :param str params:
+            The optional params.
         :rtype: dict
         :returns:
             Raw search query results.
