@@ -9,6 +9,10 @@ from pytube.innertube import InnerTube
 logger = logging.getLogger(__name__)
 
 
+class SearchParam:
+    CreativeCommon = 'EgIwAQ=='
+
+
 class Search:
     def __init__(self, query, param=None):
         """Initialize Search object.
