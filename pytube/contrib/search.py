@@ -11,6 +11,9 @@ logger = logging.getLogger(__name__)
 
 class SearchParam:
     CreativeCommon = 'EgIwAQ=='
+    CreativeCommonShort = 'EgQYATAB'
+    CreativeCommonMedium = 'EgQYAzAB'
+    CreativeCommonLong = 'EgQYAjAB'
 
 
 class Search:
