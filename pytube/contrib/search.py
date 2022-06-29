@@ -14,6 +14,9 @@ class SearchParam:
     CreativeCommonShort = 'EgQYATAB'
     CreativeCommonMedium = 'EgQYAzAB'
     CreativeCommonLong = 'EgQYAjAB'
+    Short = 'EgIYAQ=='
+    Medium = 'EgIYAw=='
+    Long = 'EgIYAg=='
 
 
 class Search:
